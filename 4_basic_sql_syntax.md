@@ -1,6 +1,13 @@
 # Basic SQL Syntax
 
-## 1. SELECT
+## SQL keywords:
+
+- SQL keywords là các từ đã được định nghĩa sẵn trong SQL để thực hiện các tác vụ cụ thể.
+- Các từ khóa quan trọng: SELECT, INSERT, UPDATE, DELETE, CREATE, ALTER, DROP, FROM, WHERE, và JOIN.
+
+## Các câu lệnh SQL thông dụng:
+
+### 1. SELECT
 
 Câu lệnh `SELECT` được sử dụng để truy vấn dữ liệu từ một bảng cơ sở dữ liệu.
 
@@ -9,7 +16,7 @@ SELECT column1, column2, ...
 FROM table_name;
 ```
 
-## 2. SELECT DISTINCT
+### 2. SELECT DISTINCT
 
 Câu lệnh `SELECT DISTINCT` được sử dụng để trả về các giá trị khác nhau trong một cột.
 
@@ -18,7 +25,7 @@ SELECT DISTINCT column1, column2, ...
 FROM table_name;
 ```
 
-## 3. WHERE
+### 3. WHERE
 
 Câu lệnh WHERE được sử dụng để lọc các bản ghi dựa trên các điều kiện cụ thể.
 
@@ -28,7 +35,7 @@ FROM table_name
 WHERE condition;
 ```
 
-## 4. AND, OR, NOT
+### 4. AND, OR, NOT
 
 Các toán tử AND, OR, NOT được sử dụng để kết hợp các điều kiện trong mệnh đề WHERE.
 
@@ -46,7 +53,7 @@ FROM table_name
 WHERE NOT condition;
 ```
 
-## 5. ORDER BY
+### 5. ORDER BY
 
 Câu lệnh ORDER BY được sử dụng để sắp xếp kết quả truy vấn theo thứ tự tăng dần hoặc giảm dần.
 
@@ -56,7 +63,7 @@ FROM table_name
 ORDER BY column1 [ASC|DESC];
 ```
 
-## 6. INSERT INTO
+### 6. INSERT INTO
 
 Câu lệnh INSERT INTO được sử dụng để thêm một bản ghi mới vào bảng.
 
@@ -65,7 +72,7 @@ INSERT INTO table_name (column1, column2, ...)
 VALUES (value1, value2, ...);
 ```
 
-## 7. UPDATE
+### 7. UPDATE
 
 Câu lệnh UPDATE được sử dụng để cập nhật các bản ghi hiện có trong bảng.
 
@@ -75,7 +82,7 @@ SET column1 = value1, column2 = value2, ...
 WHERE condition;
 ```
 
-## 8. DELETE
+### 8. DELETE
 
 Câu lệnh DELETE được sử dụng để xóa các bản ghi hiện có trong bảng.
 
@@ -84,7 +91,7 @@ DELETE FROM table_name
 WHERE condition;
 ```
 
-## 9. CREATE TABLE
+### 9. CREATE TABLE
 
 Câu lệnh CREATE TABLE được sử dụng để tạo một bảng mới.
 
@@ -96,7 +103,7 @@ CREATE TABLE table_name (
 );
 ```
 
-## 10. ALTER TABLE
+### 10. ALTER TABLE
 
 Câu lệnh ALTER TABLE được sử dụng để thêm, xóa hoặc sửa đổi các cột trong bảng.
 
@@ -111,7 +118,7 @@ ALTER TABLE table_name
 MODIFY COLUMN column_name datatype;
 ```
 
-## 11. DROP TABLE
+### 11. DROP TABLE
 
 Câu lệnh DROP TABLE được sử dụng để xóa một bảng hiện có.
 
@@ -119,11 +126,11 @@ Câu lệnh DROP TABLE được sử dụng để xóa một bảng hiện có.
 DROP TABLE table_name;
 ```
 
-## 12. JOINS
+### 12. JOINS
 
 Các phép nối JOIN được sử dụng để kết hợp các hàng từ hai hoặc nhiều bảng dựa trên một cột chung giữa chúng.
 
-### a.INNER JOIN
+#### a.INNER JOIN
 
 Trả về các hàng có giá trị phù hợp trong cả hai bảng.
 
@@ -134,7 +141,7 @@ INNER JOIN table2
 ON table1.column = table2.column;
 ```
 
-### b.LEFT JOIN (or LEFT OUTER JOIN)
+#### b.LEFT JOIN (or LEFT OUTER JOIN)
 
 Trả về tất cả các hàng từ bảng bên trái, và các hàng phù hợp từ bảng bên phải. Nếu không có sự phù hợp, kết quả là NULL từ bảng bên phải.
 
@@ -145,7 +152,7 @@ LEFT JOIN table2
 ON table1.column = table2.column;
 ```
 
-### c.RIGHT JOIN (or RIGHT OUTER JOIN)
+#### c.RIGHT JOIN (or RIGHT OUTER JOIN)
 
 Trả về tất cả các hàng từ bảng bên phải, và các hàng phù hợp từ bảng bên trái. Nếu không có sự phù hợp, kết quả là NULL từ bảng bên trái.
 
@@ -156,7 +163,7 @@ RIGHT JOIN table2
 ON table1.column = table2.column;
 ```
 
-### d.FULL OUTER JOIN
+#### d.FULL OUTER JOIN
 
 Trả về các hàng khi có sự phù hợp trong một trong các bảng. Nếu không có sự phù hợp, kết quả là NULL từ bảng không có sự phù hợp.
 
