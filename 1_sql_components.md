@@ -91,3 +91,4 @@
     - SAVEPOINT: Tạo điểm lưu trong một giao dịch để có thể quay lại.
 
 https://www.guru99.com/vi/sql-commands-dbms-query.html
+https://viblo.asia/p/nhung-kien-thuc-co-ban-ve-sql-2-r1QLx6go4Aw
