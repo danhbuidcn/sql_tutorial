@@ -254,4 +254,90 @@ class Frontend
 end
 ```
 
+## 5. Định luật Demeter (Nguyên tắc hiểu biết ít nhất)
+
+- Nguyên tắc: Phân chia các phạm vi trách nhiệm giữa các lớp và đóng gói logic trong một lớp hoặc phương thức. Các thực thể phần mềm nên độc lập với các thành phần khác.
+- Lợi ích: Giảm sự phụ thuộc giữa các lớp, giúp ứng dụng dễ hiểu, dễ bảo trì và mở rộng hơn.
+
+```ruby
+# BAD
+class Customer
+  def address
+    @address
+  end
+end
+
+class Order
+  def initialize(customer)
+    @customer = customer
+  end
+
+  def print_shipping_label
+    label = @customer.address.street + ' ' + @customer.address.city
+    puts label
+  end
+end
+
+# GOOD
+class Address
+  attr_reader :street, :city
+
+  def initialize(street, city)
+    @street = street
+    @city = city
+  end
+end
+
+class Customer
+  def initialize(address)
+    @address = address
+  end
+
+  def shipping_label
+    @address.street + ' ' + @address.city
+  end
+end
+
+class Order
+  def initialize(customer)
+    @customer = customer
+  end
+
+  def print_shipping_label
+    puts @customer.shipping_label
+  end
+end
+```
+## 6. Tránh tối ưu hóa quá sớm
+
+- Nguyên tắc: Tối ưu hóa là cần thiết nhưng không nên thực hiện ở giai đoạn đầu của quá trình phát triển.
+- Lợi ích: Giảm thiểu thời gian và công sức, tránh thiết kế mã quá phức tạp từ sớm
+
+```ruby
+# BAD: Tối ưu hóa quá sớm
+def find_prime_numbers(limit)
+  primes = []
+  (2..limit).each do |num|
+    primes << num if (2..Math.sqrt(num)).none? { |i| num % i == 0 }
+  end
+  primes
+end
+
+# GOOD: Đơn giản và dễ hiểu
+def find_prime_numbers(limit)
+  primes = []
+  (2..limit).each do |num|
+    is_prime = true
+    (2..num-1).each do |i|
+      if num % i == 0
+        is_prime = false
+        break
+      end
+    end
+    primes << num if is_prime
+  end
+  primes
+end
+```
+
 https://viblo.asia/p/cac-nguyen-tac-thiet-ke-phan-mem-4dbZNQakKYM
