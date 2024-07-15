@@ -57,9 +57,25 @@ Một công ty bán lẻ lớn muốn phân tích xu hướng mua sắm của kh
 
 ### Ví dụ về OLTP
 
+Một cửa hàng trực tuyến xử lý hàng ngàn đơn đặt hàng mỗi ngày. Họ sử dụng hệ thống OLTP để:
 
+- Ghi lại từng đơn hàng của khách hàng ngay khi được đặt.
+- Cập nhật thông tin hàng tồn kho và xử lý thanh toán thời gian thực.
+- Đảm bảo tính toàn vẹn dữ liệu và khả năng phục hồi trong trường hợp xảy ra sự cố.
 
+```sql
+-- Truy vấn OLTP ví dụ: Thêm một đơn đặt hàng mới
+BEGIN TRANSACTION;
 
+INSERT INTO orders (order_id, customer_id, order_date, status)
+VALUES (12345, 67890, '2024-07-15', 'Pending');
 
+INSERT INTO order_items (order_id, product_id, quantity, price)
+VALUES (12345, 111, 2, 19.99);
 
+UPDATE products
+SET stock_quantity = stock_quantity - 2
+WHERE product_id = 111;
 
+COMMIT;
+```
