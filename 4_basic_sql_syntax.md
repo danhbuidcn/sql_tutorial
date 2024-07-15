@@ -130,6 +130,13 @@ DROP TABLE table_name;
 
 Các phép nối JOIN được sử dụng để kết hợp các hàng từ hai hoặc nhiều bảng dựa trên một cột chung giữa chúng.
 
+Ghi chú
+
+- INNER JOIN và JOIN thường được sử dụng thay thế nhau vì chúng hoạt động giống nhau.
+
+- Không phải tất cả các hệ quản trị cơ sở dữ liệu đều hỗ trợ FULL JOIN và NATURAL JOIN.
+
+
 #### a.INNER JOIN
 
 Trả về các hàng có giá trị phù hợp trong cả hai bảng.
@@ -172,4 +179,43 @@ SELECT columns
 FROM table1
 FULL OUTER JOIN table2
 ON table1.column = table2.column;
+```
+
+#### e.CROSS JOIN
+
+Kết hợp tất cả các bản ghi từ bảng này với tất cả các bản ghi từ bảng khác (sản phẩm Cartesian).
+
+```sql
+SELECT a.column1, b.column2
+FROM table1 a
+CROSS JOIN table2 b;
+```
+
+#### f. CARTESIAN JOIN
+
+Là một loại CROSS JOIN, tạo ra sản phẩm Cartesian của hai bảng. Mỗi hàng của bảng đầu tiên kết hợp với mỗi hàng của bảng thứ hai.
+
+```sql
+SELECT a.column1, b.column2
+FROM table1 a, table2 b;
+```
+
+#### g.SELF JOIN
+
+Kết hợp một bảng với chính nó. Sử dụng trong trường hợp bạn cần so sánh dữ liệu trong cùng một bảng.
+
+```sql
+SELECT a.column1, b.column2
+FROM table1 a
+INNER JOIN table1 b ON a.common_column = b.common_column;
+```
+
+#### h.NATURAL JOIN
+
+Tự động kết hợp các bảng dựa trên các cột có cùng tên và kiểu dữ liệu trong cả hai bảng.
+
+```sql
+SELECT *
+FROM table1
+NATURAL JOIN table2;
 ```
