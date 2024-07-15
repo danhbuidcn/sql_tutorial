@@ -118,8 +118,10 @@ Tốn Dung Lượng Lưu Trữ: Indexes yêu cầu thêm không gian lưu trữ.
 
 Quản Lý Indexes: Cần phải tối ưu hóa và quản lý indexes để đảm bảo hiệu suất tốt nhất.
 
-`Indexes là một công cụ mạnh mẽ trong cơ sở dữ liệu, giúp tăng tốc độ truy vấn và cải thiện hiệu suất.
+``
+Indexes là một công cụ mạnh mẽ trong cơ sở dữ liệu, giúp tăng tốc độ truy vấn và cải thiện hiệu suất.
 
-Tuy nhiên, cần sử dụng indexes một cách hợp lý và cân nhắc đến các vấn đề liên quan đến dung lượng lưu trữ và hiệu suất ghi dữ liệu.`
+Tuy nhiên, cần sử dụng indexes một cách hợp lý và cân nhắc đến các vấn đề liên quan đến dung lượng lưu trữ và hiệu suất ghi dữ liệu.
+``
 
 https://viblo.asia/p/nhung-kien-thuc-co-ban-ve-sql-9-zOQJwAgqVMP
