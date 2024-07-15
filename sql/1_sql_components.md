@@ -13,7 +13,7 @@
 
 `SQL có nhiều hệ quản trị cơ sở dữ liệu khác nhau như Oracle Database, Microsoft SQL Server và MySQL. Mặc dù chúng khác nhau về nhiều mặt, nhưng tất cả các cơ sở dữ liệu SQL sử dụng các lệnh ngôn ngữ chung - SQL.`
 
-![sql_commands](./images/sql_commands1.webp)
+![sql_commands](../images/sql_commands1.webp)
 
 ## Ngôn ngữ Định nghĩa Dữ liệu (Data Definition Language)
 
