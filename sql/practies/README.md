@@ -1,0 +1,1 @@
+[Series MySQL basic to pro (a-z) cơ bản đến chuyên sâu cho FE và BE](https://github.com/anonystick/anonystick?tab=readme-ov-file#:~:text=Series%20MySQL%20basic%20to%20pro%20(a%2Dz)%20c%C6%A1%20b%E1%BA%A3n%20%C4%91%E1%BA%BFn%20chuy%C3%AAn%20s%C3%A2u%20cho%20FE%20v%C3%A0%20BE)
