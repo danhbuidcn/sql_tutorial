@@ -8,7 +8,7 @@
   - Mẫu kiến trúc định nghĩa cấu trúc tổng quát và các quy tắc phối hợp các thành phần để giải quyết các vấn đề thiết kế lớn.
 
 - `Ví Dụ`:
-  - Mẫu kiến trúc như `MVC` (Model-View-Controller), `Layered Architecture`, `Microservices`, hoặc `Client-Server`. 
+  - Mẫu kiến trúc như `MVC` (Model-View-Controller), `Layered Architecture`, `Microservices`, `Serverless`, `Event-Driven`, hoặc `Client-Server`. 
   
   - Mẫu kiến trúc giúp xác định cách các thành phần của hệ thống tương tác với nhau.
 
@@ -20,7 +20,7 @@
   - Mẫu thiết kế thường được áp dụng trong giai đoạn thiết kế chi tiết của phần mềm và tập trung vào cách tổ chức các đối tượng và lớp trong mã nguồn.
 
   - Ví Dụ:
-    - `Singleton`, `Factory Method`, `Observer`, `Decorator`, và `Strategy`. 
+    - `Singleton`, `Adapter`, `Factory Method`, `Observer`, `Decorator`, và `Strategy`. 
     
     - Các mẫu thiết kế giúp giải quyết các vấn đề như cách tạo đối tượng, cách quản lý sự tương tác giữa các đối tượng, hoặc cách mở rộng tính năng của một đối tượng.
 
