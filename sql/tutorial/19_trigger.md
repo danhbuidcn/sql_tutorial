@@ -57,6 +57,7 @@ Giải thích:
 
 - after_create: Đây là callback của Rails, nó sẽ được gọi sau khi một bản ghi Order mới được tạo.
 - customer.touch(): Phương thức touch của ActiveRecord sẽ cập nhật trường updated_at của Customer tương ứng.
+- touch() sử dụng thời gian của hệ thống, cụ thể là thời gian đã được thiết lập theo múi giờ của ứng dụng Rails (time_zone)
 
 ## 3.So sánh Trigger SQL và Callback Rails
 
