@@ -24,7 +24,6 @@ It provides theoretical knowledge, practical examples, and useful tools to help 
 - ⚡ [Performance Optimization](#performance-optimization-section)
 - 🐳 [Containerization and Orchestration](#containerization-and-orchestration-section)
 - 🛠️ [DevOps and Infrastructure](#devops-and-infrastructure-section)
-- 🔧 [Developer Tools](#developer-tools-section)
 - 📄 [Documentation](#documentation-section)
 - 📁 [Examples](#examples-section)
 - 🌍 [Popular Websites for Developers](#popular-websites-for-developers-section)
@@ -87,6 +86,14 @@ Ensure the reliability of your code with comprehensive testing:
 
 Familiarize yourself with essential development tools:
 
+- **npm**: The package manager for JavaScript and Node.js, used to install and manage libraries and tools for web projects.
+- **Yarn**: A fast, reliable alternative to npm for managing JavaScript packages with better performance and security.
+- **Pip**: Python's package installer, used to install and manage Python libraries and dependencies.
+- **apt**: A package manager for Debian-based Linux distributions, used to install, update, and manage system packages.
+- **Docker**: A platform for containerizing applications, ensuring consistent environments across development, testing, and production.
+
+Explore essential developer tools and practices:
+
 - **Version Control**: Using Git and platforms like GitHub, GitLab, and Bitbucket for source code management.
 - **IDE and Editors**: Popular development environments like Visual Studio Code, JetBrains, and Vim.
 - **Task Management**: Tools for managing projects and tasks such as Jira, Trello, and Asana.
@@ -146,14 +153,6 @@ Learn about DevOps practices and infrastructure management:
 - **Infrastructure as Code (IaC)**: Using Terraform and Ansible for managing infrastructure.
 - **Monitoring and Logging**: Tools like Prometheus, Grafana, and ELK Stack for monitoring application performance and logging.
 - **CI/CD Best Practices**: Implementing effective CI/CD pipelines.
-
-## <a id="developer-tools-section"></a>🔧 Developer Tools
-
-Explore essential developer tools and practices:
-
-- **IDE and Editors**: Detailed usage and tips for popular IDEs and editors.
-- **Version Control**: Advanced Git techniques, branching strategies, and code reviews.
-- **Task Management**: Effective use of task management tools for project organization.
 
 ## <a id="documentation-section"></a>📄 Documentation
 
