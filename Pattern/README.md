@@ -61,3 +61,5 @@ Tóm lại, `kiến trúc phần mềm(Software Architecture)` thường là c�
 https://viblo.asia/p/software-architecture-khac-biet-giua-kien-truc-va-thiet-ke-eW65G7AJ5DO
 
 https://github.com/nguyenphuc22/Design-Patterns
+
+https://viblo.asia/p/tong-hop-cac-bai-huong-dan-ve-design-pattern-23-mau-co-ban-cua-gof-3P0lPQPG5ox
